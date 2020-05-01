@@ -92,6 +92,7 @@ class ChatInputToolbar extends StatelessWidget {
                   child: Directionality(
                     textDirection: textDirection,
                     child: TextField(
+                      keyboardAppearance: MediaQuery.of(context).platformBrightness,
                       focusNode: focusNode,
                       onChanged: (value) {
                         onTextChange(value);
